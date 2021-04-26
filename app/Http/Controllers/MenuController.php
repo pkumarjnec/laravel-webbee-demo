@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 class MenuController extends BaseController
 {
     /**
-     * Assign event service object
+     * Assign Menu service object
      *
      * @var object
      **/
@@ -27,6 +27,11 @@ class MenuController extends BaseController
         $this->service = $menuService;
     }
 
+    /**
+     * Get Menu Items
+     *
+     * @return array
+     **/
     public function getMenuItems() {
         $menus = $this->service->menuList();
         return $menus;

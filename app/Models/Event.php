@@ -17,8 +17,11 @@ class Event extends Model
         return $this->hasMany('App\Models\Workshop','event_id')->scopes('Live');
     }
 
-
-
+    /**
+     * Search Live Events
+     *
+     * @return object
+     */
     static function fetchLiveEvent(){
         $events = Event::with('workshops')->has('workshops');
         return $events->get();

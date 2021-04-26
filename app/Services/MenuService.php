@@ -34,15 +34,15 @@ class MenuService
 {
 
     /**
-     * Fetch Events
+     * Fetch Menu List
      *
      * @return array
      */
     public function menuList() : array
     {
-        $events = MenuItem::search();
-        if(!empty($events)){
-            return $events->toArray();
+        $menus = MenuItem::search();
+        if(!empty($menus)){
+            return $menus->toArray();
         }else {
             return array();
         }

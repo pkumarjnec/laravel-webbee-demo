@@ -10,7 +10,7 @@ class MenuItem extends Model
 {
 
     /**
-     * Relation with Workshop
+     * Relation with Self
      *
      * @return object
      **/
@@ -18,6 +18,11 @@ class MenuItem extends Model
         return $this->hasMany('App\Models\MenuItem','parent_id');
     }
 
+    /**
+     * Search Menu
+     *
+     * @return object
+     */
     static function search(){
         $events = MenuItem::with('children')->has('children')->get();
         return $events;

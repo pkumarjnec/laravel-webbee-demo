@@ -19,7 +19,7 @@ class EventsController extends BaseController
      **/
     protected $service;
     /**
-     * Create a new login service instance
+     * Create a new event service instance
      *
      * @param EventsService object $eventService login service object
      *

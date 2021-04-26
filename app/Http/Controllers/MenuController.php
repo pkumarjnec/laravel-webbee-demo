@@ -16,9 +16,9 @@ class MenuController extends BaseController
      **/
     protected $service;
     /**
-     * Create a new login service instance
+     * Create a new menu service instance
      *
-     * @param MenuService object $eventService login service object
+     * @param MenuService object $menuService login service object
      *
      * @return void
      **/

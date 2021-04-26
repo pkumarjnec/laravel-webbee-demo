@@ -32,6 +32,7 @@ class EventsController extends BaseController
 
     public function getEventsWithWorkshops() {
         $events = $this->service->search();
+        return $events;
     }
 
     public function getFutureEventsWithWorkshops() {

@@ -32,7 +32,7 @@ class EventsController extends BaseController
 
     public function getEventsWithWorkshops() {
         $events = $this->service->search();
-        echo "<br><pre>"; print_r($events); die;
+        return $events;
     }
 
     public function getFutureEventsWithWorkshops() {

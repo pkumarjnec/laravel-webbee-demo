@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Event;
 
 use App\Models\Event;
 use App\Services\EventsService;
@@ -32,7 +32,6 @@ class EventsController extends BaseController
 
     public function getEventsWithWorkshops() {
         $events = $this->service->search();
-        echo "<br><pre>"; print_r($events); die;
     }
 
     public function getFutureEventsWithWorkshops() {
